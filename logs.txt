@@ -1,0 +1,37 @@
+panovjane@Jane:~/SI_2023_lab1_213201$ git log
+commit 27234dc8f44567a929aaeab3f74059efb162bb34 (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: Jane Panov <panovjane@gmail.com>
+Date:   Fri Mar 31 19:51:08 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit 048af1df7e410ffe1372a17164b9ca0fed25b35a
+Merge: b348c9e 60f51b9
+Author: Jane Panov <panovjane@gmail.com>
+Date:   Fri Mar 31 20:00:35 2023 +0200
+
+    Merge branch 'bug2'
+
+commit 60f51b9ba84049f2a86e6cbcfa3bf74d55f14fda (origin/bug2, bug2)
+Author: Jane Panov <panovjane@gmail.com>
+Date:   Fri Mar 31 19:41:16 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit b348c9ed56dd3d48aeaf640c5cb4786ba0bc8374 (origin/bug1, bug1)
+Author: Jane Panov <panovjane@gmail.com>
+Date:   Fri Mar 31 19:23:48 2023 +0200
+
+    Fix wrong loop for reading
+
+commit e770083cf629e829295abf000a7ec2397a7b5298
+Author: Jane Panov <panovjane@gmail.com>
+Date:   Fri Mar 31 19:06:39 2023 +0200
+
+    Add java class
+
+commit fb27a2025b133f00551e26a574207e3e8afa759a
+Author: Jane Panov <panovjane@gmail.com>
+Date:   Fri Mar 31 18:58:08 2023 +0200
+
+    Initial commit

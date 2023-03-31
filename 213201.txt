@@ -1,0 +1,128 @@
+1.https://github.com/janepanov 
+    Линк до мојот Github профил
+
+2.Името на мојата главна гранка ја променив во master
+
+3.https://github.com/janepanov/SI_2023_lab1_213201.git
+    Линк до мојот оддалечен (remote) репозиториум
+
+4.git init
+    Иницијализација на локалниот директориум
+
+5.git remote add origin https://github.com/janepanov/SI_2023_lab1_213201.git
+    Поврзување на локалниот со оддалачениот репозиториум
+
+6.nano README.md
+    Креирање на README.md и пишување на самата содржина на датотеката.
+  
+  git add README.md
+    Датотеката од фазата untracked преминува во staged
+
+  git commit -m "Initial commit"
+     Прв иницијален commit за овој репозиториум, креиран е првиот snapshot.
+
+7.nano SILab1.java
+    Kреирање на SILab1.java и пишување на самата содржина на датотеката.
+
+  git add SILab1.java
+    Датотеката од фазата untracked преминува во staged
+
+  git commit -m "Add java class"
+     Втор commit за овој репозиториум, креиран е вториот snapshot.
+
+8.git push --all origin
+    Синхронизација на сите гранки со оддалечениот репозиториум
+
+9.git branch bug1
+  git branch bug2
+  git branch bug3
+    Креирање на секоја гранка една по една, односно креирање на трите гранки
+
+10.git checkout bug1
+     Префрлање на гранката bug1
+   
+11.nano SILab1.java
+     Отварање на самата датотека и менување на грешката(<= во <)
+
+   git commit -am "Fix wrong loop for reading"
+      Прв commit на гранката bug1, искористена е кратенката -am,
+      бидејќи датотеката веќе беше во staged фазата.
+
+12.git checkout bug2
+     Префрлање на гранката bug2
+
+13.nano SILab1.java
+     Отварање на самата датотека и менување на грешката(el % 2 == 0 во el % 2 == 1)
+
+   git commit -am "Fix wrong condition in filterOddNumbers"
+      Прв commit на гранката bug2, искористена е кратенката -am,
+      бидејќи датотеката веќе беше во staged фазата.
+
+14.git checkout bug3
+     Префрлање на гранката bug3
+
+15.nano SILab1.java
+     Отварање на самата датотека и менување на грешките
+     (int sum = 1 во int sum = 0 и sum *= el во sum += el)
+
+   git commit -am "Fix method sumEvenNumbers"
+     Прв commit на гранката bug3, искористена е кратенката -am,
+     бидејќи датотеката веќе беше во staged фазата.
+
+16.git push --all origin 
+     Синхронизација на сите гранки со оддалечениот репозиториум
+
+17.git checkout master
+     Префрлање на гранката master
+
+18.git merge bug1
+     Спојување на master со гранката bug1
+     *Нема конфликти
+     *Употребена е стратегијата FF(fast-forward)
+
+19.git push --all origin
+     Синхронизација на сите гранки со оддалечениот репозиториум
+
+20.git merge bug2
+     Спојување на master со гранката bug2
+     *Нема конфликти
+     *Употребена е стратегијата recursive(ort)
+
+21.git push -all origin
+     Синхронизација на сите гранки со оддалечениот репозиториум
+
+22.git checkout bug3
+     Префрлање на гранката bug3
+
+23.git rebase master
+     Rebase од гранката bug3 кон master
+     (Избегнување на merge commit)
+
+24.git checkout master
+     Префрлање на гранката master
+
+25.git merge bug3
+     Споување на master со bug3
+     *Нема конфликти
+     *Употребена е стратегијата FF(fast-forward)
+
+26.git push --force --all origin
+     Присилна синхронизација на сите гранки со оддалечениот репозиториум.
+
+27.nano logs.txt
+     Креирање на logs.txt и внесување на целосната историја од git log
+
+   git add logs.txt
+     Датотеката од фазата untracked преминува во staged
+
+   nano 213201.txt
+     Креирање на 213201.txt и внесување на целосната документација
+
+   git add 213201.txt
+     Датотеката од фазата untracked преминува во staged
+
+   git commit -m "Final commit"
+     Последен commit
+
+28.git push -all origin
+     Синхронизација на сите гранки со оддалечениот репозиториум
